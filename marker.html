@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</head>
+
+<style>
+      @media (max-width: 300px) {
+    html { font-size:  40%; }
+}
+
+@media (min-width: 500px) {
+    html { 
+        /* font-size: 60%; } */
+        height: 30%; 
+}
+
+@media (min-width: 700px) {
+    html { 
+         font-size: 80%; 
+      
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black}
+        body{
+            height:50%;
+        }
+}
+@media (min-width: 900px) {
+    html { 
+        /* font-size: 80%; */
+        font-weight:100;
+    height: 80%; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black}
+        body{
+            height:50%;
+          
+        }
+}}
+@media (min-width: 1200px) {
+    html { 
+        height:100%; 
+        /* font-size: 120%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black }
+}
+caption{
+    font-weight:bold;
+}
+</style>
+<body>
+        <nav class="navbar navbar-default" style="
+        border:1px rgb(103, 106, 109);background-color:rgb(59, 197, 231)">
+            <div class="container">
+                <i class="fas fa-bars"style="text-align:left">
+    
+                </i>
+              <div class="navbar-header">
+                
+                <a class="navbar-brand" href="#" style="color:black;font-weight:bold;">ABC BANK</a><br>
+                
+            </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#" style="color:black;font-weight:600;">Anthony  Finn - Authorized signatory                </a></li>
+               
+               
+              </ul>
+            
+            
+            </div>
+          </nav>
+          <nav class="navbar navbar-default" style="background-color:rgb(59, 197, 231);
+          border:1px solid rgb(183, 192, 201);">
+                <div class="container">
+                   
+                  <div class="navbar-header mx-auto">
+                    
+                    <a class="navbar-brand" href="#" style="color:black;;font-weight:600;">Create Proxy Account for Agent -Maker                        </a>
+                   
+                </div>
+                 
+                </div>
+              </nav>
+    <div class="container " id=main>
+        <form name="myform" onsubmit="tosubmit();" action="checker.html">
+            <br>
+            <div class="row">
+                <div class=" col-sm-2"> </div>
+                <div class="col-sm-8">
+                    <label for="city">City </label><br>
+
+                    <select class="form-control input-md" id="mySelect" name="city">
+                        <option selected disabled hidden style='display: none' value='Vancover'></option>
+                        <option value="Vancover" selected="selected">Vancover</option>
+                        <option value="Toronto">Toronto</option>
+
+                    </select>
+                </div>
+                <div class="col-sm-2"> </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2"> </div>
+                <div class="col-sm-8">
+                    <label for="manager">Manager</label><br>
+                    <select class="form-control input-md" id="mngr" name="manager">
+                        <option selected disabled hidden style='display: none' value='Julie'></option>
+                        <option value="Julie" selected="selected">Julie</option>
+                        <option value="Hailey">Hailey</option>
+
+                    </select>
+
+                </div>
+                <div class="col-sm-2"> </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-2"> </div>
+                <div class="col-sm-8">
+
+                    <label for="agent">Agent</label><br>
+                    <input type="text" class="form-control" id="agent" value="Liam">
+                </div>
+                <div class="col-sm-2"> </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-2"> </div>
+                <div class="form-group col-sm-8">
+                    <label for="empID">Emp ID</label><br>
+                    <input type="text" class="form-control" id="eid" value="798022">
+                </div>
+                <div class="col-sm-2"> </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2"> </div>
+                <div class=" col-sm-8">
+                    <label for="contactID">Contact Number</label><br>
+                    <input type="text" class="form-control" id="cid" value="75015894">
+                </div>
+                <div class="col-sm-2"> </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"> </div>
+                <div class="col-sm-8">
+                    <label for="accno">Account Number</label><br>
+                    <select class="form-control input-md" id="accno" name="accountNo">
+                        <option selected disabled hidden style='display: none' value='3796467'></option>
+                        <option value="4081292">4081292</option>
+                        <option value="4204817"
+                        selected="selected">4204817</option>
+                        <option value="3796467">3796467</option>
+                        <option value="2590158">2590158</option>
+                        <option value="3585471">3585471</option>
+
+                    </select>
+
+                </div>
+                <div class="col-sm-2"> </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2"> </div>
+                <div class="col-sm-8">
+                    <label for="vpaID">Enter Proxy ID</label><br>
+                    <input type="text" class="form-control" id="vpaID" value="Liam-SMB@ABC">
+
+                </div>
+                <div class="col-sm-2"> </div>
+            </div>
+    </div>
+    </div>
+
+    <!-- button -->
+
+    <div class="row ">
+        <br><br><br>
+
+        <div class="col-sm-7" style="text-align: right;    margin-top: 25px;">
+            <button class="btn btn-primary" type="submit" value="submit" id="submitbutton">Submit</button>
+        </div>
+    </div>
+    </form>
+    </div>
+
+
+
+
+    <script>
+
+        function tosubmit() {
+            // Getting the value of your text input
+            var p = document.getElementById("mySelect");
+
+            var city = p.options[p.selectedIndex].text;
+            // Storing the value above into localStorage
+            localStorage.setItem("mySelect", city);
+
+            var m = document.getElementById("mngr");
+            var manager = m.options[m.selectedIndex].text;
+
+            localStorage.setItem("mngr", manager);
+
+            var a = document.getElementById("accno");
+            var actno = a.options[a.selectedIndex].text;
+
+            localStorage.setItem("accno", actno);
+
+
+
+            return true;
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

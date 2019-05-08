@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="stylesheetcommon.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <title>
+
+    </title>
+    <style>
+        .truck-wrapper{
+  position:relative;
+  height: 100%;
+ 
+}
+.truck-wrapper2{
+  position:relative;
+  height: 100%;
+ 
+}
+.truck1{
+  width: 4.7%;
+  position: absolute;
+
+  animation: truck1 3s linear;
+ 
+  transform-origin: 0px 200px;
+  animation-fill-mode: forwards;
+ 
+ /* animation-direction: alternate;*/
+}
+.truck2{
+  width: 4.7%;
+  position: absolute;
+  
+  animation: truck2 3s linear;
+ 
+  transform-origin: 0px 200px;
+  animation-fill-mode: forwards;
+ 
+ /* animation-direction: alternate;*/
+}
+@keyframes truck1 {
+  from {
+    top:-140px;
+   left:60px;
+   
+    /* transform:rotate(0);  */
+  }
+  
+  to { 
+       top:-160px;
+      left:650px;
+      visibility:hidden;
+      
+    /* transform:rotate(40deg);  */
+  }
+}
+@keyframes truck2 {
+  from {
+    top:-140px;
+   left:60px;
+   
+    /* transform:rotate(0);  */
+  }
+  
+  to { 
+      top:20px;
+      left:550px;
+      visibility:hidden;
+      
+    /* transform:rotate(40deg);  */
+  }
+}
+.container-fluid{
+    background-color: #f3caca;
+    border-color: rgb(73, 73, 73);
+}
+
+    </style>
+    <body>
+            <script>setTimeout(function(){
+                document.getElementById("title").innerHTML="Goods Delivered"},3200);</script>
+            <div class="container-fluid">     
+            <nav class="navbar navbar-expand-md navbar-fixed-top navbar-light   main-nav">
+                        
+            <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto order-1 order-md-2">
+                    <div class="navbar-header">
+                            <a class="navbar-brand" href="#" id="title" style="padding: 1px;
+                            font-size: 2em; color: black
+                            ">Delivery agents leaving for deliveries to  retailer
+                                </a><br>
+                           
+                    </div>
+            </ul>
+           
+               
+            </div>
+        </div>
+    </nav>
+<div class="container" style="width:900px">
+    <br><br><br><br>
+    <div class="row">
+        <div class="col-sm-1"></div>
+<div class="col-sm-2">
+        <div class="bank">
+                <img src="truck.png" style="width:100px">
+                <p>Delivery Truck</p>
+            </div>
+            
+</div>
+
+<div class="col-sm-2"></div>
+<div class="col-sm-5"></div>
+<div class="col-sm-2">
+        <div class="bank">
+                <img src="enterprise.png" style="width:100px">
+                <p>Retailer</p>
+            </div>
+</div>
+<div class="col-sm-1"></div>
+
+
+
+    </div>
+
+
+    <div class="truck-wrapper">
+        <div class="truck1">
+        <img src="box.png" style="width:100px"> 
+        <p>Liam</p>
+    </div>
+    </div>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <div style="float: right">
+    <a href="daystart.html" class="previous">&laquo; Previous</a>
+    <a href="confirmation.html" class="next">Next &raquo;</a>
+    </div>
+</div>
+
+</div>
+</div>
+    </body>
+
+</html>

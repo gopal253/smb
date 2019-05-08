@@ -1,0 +1,79 @@
+
+
+<html>
+<head>
+	
+</head>
+<style>
+    #page_heading
+	{
+		float:left;
+		border-bottom:1px dotted #ADADAD;
+		margin-bottom:15px;
+	}
+td
+	{
+		text-align:center;
+	}
+th
+	{
+		color:white;
+		border-color:black;
+	}
+    @media (max-width: 300px) {
+    html { font-size:  40%; }
+}
+
+@media (min-width: 500px) {
+    html { 
+        /* font-size: 60%; } */
+        height: 30%; 
+}
+
+@media (min-width: 700px) {
+    html { 
+         font-size: 80%; 
+     
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black}
+        body{
+            height:50%;
+        }
+}
+@media (min-width: 900px) {
+    html { 
+        /* font-size: 80%; */
+    height: 80%; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black}
+        body{
+            height:50%;
+        }}
+}
+@media (min-width: 1200px) {
+    html { 
+        height:100%; 
+        /* font-size: 120%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black }
+}
+caption{
+    font-weight:bold;
+}
+</style>
+<body onload="parent.show_notification();create_tabledata();" onunload="mark_read();">
+	<div id="page_heading">
+		<font color="#3399ff">Transcations History</font>
+	</div>
+	<div id="show_history">
+		<table id="table_data" border="1" style="border-collapse:collapse;" cellpadding=5px; width=100%>
+			<tr bgcolor="#ADADAD">
+				<th>Sender</th>
+				<th>Send To</th>
+				<th>Amount</th>
+				<th>Date</th>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
